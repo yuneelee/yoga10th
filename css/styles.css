@@ -1,3 +1,5 @@
+@import "reset.css";
+
 body {
     font-size: 14px;
     font-family: 'Playfair Display', serif;
@@ -39,9 +41,14 @@ body {
 .screen-header__place {
     font-size: 13px;
 }
+.screen-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .screen-main__img-box{
     margin-bottom: 90px;
-    width: 100%;
+    width: 330px;
     height: 250px;
     overflow: hidden;
     align-items: center;
@@ -63,23 +70,48 @@ body {
 }
 .text-title {
     font-size: 20px;
+    margin-bottom: 30px;
 }
 .text-contents {
-    margin: 30px 0px;
+    margin-bottom: 30px;
 }
 .screen-main__event {
     margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .screen-main__event__text-title {
     font-size: 20px;
 }
-.screen-main__event_tb {
-    margin-top: 30px;
+.screen-main__event_tb td{
     text-align: start;
 }
 table {
     border-collapse: collapse;
+    font-size: 16px;
+    line-height: 23px;
+    width: 330px;
+}
+th {
+    font-weight: 800;
+}
+td {
+    padding: 8px 5px;
+}
+.event-order{
+    font-weight: 600;
+    font-size: 14px;
 }
 .screen-main__event_tb th, td {
     border: 1px solid black;
+}
+.screen-main__gallary {
+    margin-bottom: 50px;
+}
+
+
+.gallary-img {
+    width: 100px;
+    height: 100px;
 }
